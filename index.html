@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Glam - Maquiagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Beauty Glam</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Realce sua beleza com nossos produtos</h2>
+        <button onclick="rolarParaProdutos()">Ver Produtos</button>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="img/batom.jpg" alt="Batom">
+                <h3>Batom Matte</h3>
+                <p>R$ 39,90</p>
+                <button onclick="adicionarCarrinho('Batom Matte')">Adicionar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/base.jpg" alt="Base Líquida">
+                <h3>Base Líquida</h3>
+                <p>R$ 59,90</p>
+                <button onclick="adicionarCarrinho('Base Líquida')">Adicionar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sombra.jpg" alt="Paleta de Sombras">
+                <h3>Paleta de Sombras</h3>
+                <p>R$ 89,90</p>
+                <button onclick="adicionarCarrinho('Paleta de Sombras')">Adicionar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="galeria">
+        <h2>Inspirações</h2>
+        <div class="fotos">
+            <img src="img/makeup1.jpg" alt="Maquiagem 1">
+            <img src="img/makeup2.jpg" alt="Maquiagem 2">
+            <img src="img/makeup3.jpg" alt="Maquiagem 3">
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="contato" class="newsletter">
+        <h2>Receba novidades</h2>
+        <form id="formNewsletter">
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="mensagem"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
