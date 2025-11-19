@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff5f8;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: #ff6fa5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    background: url('img/banner.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+
+.banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff6fa5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.banner button:hover {
+    background: #ff8fbd;
+}
+
+/* Produtos */
+.produtos {
+    padding: 40px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #ff6fa5;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background: #ff8fbd;
+}
+
+/* Galeria */
+.galeria {
+    padding: 40px;
+    text-align: center;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fotos img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Newsletter */
+.newsletter {
+    background: #ff6fa5;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #ff6fa5;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #ffe4ee;
+}
